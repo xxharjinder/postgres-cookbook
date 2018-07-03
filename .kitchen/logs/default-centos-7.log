@@ -1,158 +1,144 @@
-I, [2018-07-03T15:03:37.222470 #4152]  INFO -- default-centos-7: -----> Creating <default-centos-7>...
-I, [2018-07-03T15:03:38.002716 #4152]  INFO -- default-centos-7: Bringing machine 'default' up with 'virtualbox' provider...
-I, [2018-07-03T15:03:38.302553 #4152]  INFO -- default-centos-7: ==> default: Importing base box 'bento/centos-7'...
-I, [2018-07-03T15:03:43.992631 #4152]  INFO -- default-centos-7: [KProgress: 30%[KProgress: 50%[KProgress: 60%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
-I, [2018-07-03T15:03:44.113515 #4152]  INFO -- default-centos-7: ==> default: Checking if box 'bento/centos-7' is up to date...
-I, [2018-07-03T15:03:46.020636 #4152]  INFO -- default-centos-7: ==> default: Setting the name of the VM: default-centos-7_default_1530594225977_54247
-I, [2018-07-03T15:03:46.581797 #4152]  INFO -- default-centos-7: ==> default: Clearing any previously set network interfaces...
-I, [2018-07-03T15:03:46.635818 #4152]  INFO -- default-centos-7: ==> default: Preparing network interfaces based on configuration...
-I, [2018-07-03T15:03:46.635945 #4152]  INFO -- default-centos-7:     default: Adapter 1: nat
-I, [2018-07-03T15:03:46.686756 #4152]  INFO -- default-centos-7: ==> default: Forwarding ports...
-I, [2018-07-03T15:03:46.760811 #4152]  INFO -- default-centos-7:     default: 22 (guest) => 2222 (host) (adapter 1)
-I, [2018-07-03T15:03:46.911452 #4152]  INFO -- default-centos-7: ==> default: Booting VM...
-I, [2018-07-03T15:03:47.182331 #4152]  INFO -- default-centos-7: ==> default: Waiting for machine to boot. This may take a few minutes...
-I, [2018-07-03T15:03:47.460449 #4152]  INFO -- default-centos-7:     default: SSH address: 127.0.0.1:2222
-I, [2018-07-03T15:03:47.460589 #4152]  INFO -- default-centos-7:     default: SSH username: vagrant
-I, [2018-07-03T15:03:47.460682 #4152]  INFO -- default-centos-7:     default: SSH auth method: private key
-I, [2018-07-03T15:04:11.306607 #4152]  INFO -- default-centos-7:     default: 
-I, [2018-07-03T15:04:11.306732 #4152]  INFO -- default-centos-7:     default: Vagrant insecure key detected. Vagrant will automatically replace
-I, [2018-07-03T15:04:11.306791 #4152]  INFO -- default-centos-7:     default: this with a newly generated keypair for better security.
-I, [2018-07-03T15:04:12.402808 #4152]  INFO -- default-centos-7:     default: 
-I, [2018-07-03T15:04:12.402972 #4152]  INFO -- default-centos-7:     default: Inserting generated public key within guest...
-I, [2018-07-03T15:04:12.514112 #4152]  INFO -- default-centos-7:     default: Removing insecure key from the guest if it's present...
-I, [2018-07-03T15:04:12.624649 #4152]  INFO -- default-centos-7:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
-I, [2018-07-03T15:04:13.277172 #4152]  INFO -- default-centos-7: ==> default: Machine booted and ready!
-I, [2018-07-03T15:04:13.277392 #4152]  INFO -- default-centos-7: ==> default: Checking for guest additions in VM...
-I, [2018-07-03T15:04:13.322053 #4152]  INFO -- default-centos-7: ==> default: Setting hostname...
-I, [2018-07-03T15:04:14.336683 #4152]  INFO -- default-centos-7: ==> default: Mounting shared folders...
-I, [2018-07-03T15:04:14.336996 #4152]  INFO -- default-centos-7:     default: /tmp/omnibus/cache => /Users/harjinderbrar/.kitchen/cache
-I, [2018-07-03T15:04:14.826787 #4152]  INFO -- default-centos-7: ==> default: Machine not provisioned because `--no-provision` is specified.
-I, [2018-07-03T15:04:16.372375 #4152]  INFO -- default-centos-7: [SSH] Established
-I, [2018-07-03T15:04:16.372746 #4152]  INFO -- default-centos-7: Vagrant instance <default-centos-7> created.
-I, [2018-07-03T15:04:16.373851 #4152]  INFO -- default-centos-7: Finished creating <default-centos-7> (0m39.15s).
-I, [2018-07-03T15:04:16.373961 #4152]  INFO -- default-centos-7: -----> Converging <default-centos-7>...
-I, [2018-07-03T15:04:16.374726 #4152]  INFO -- default-centos-7: Preparing files for transfer
-I, [2018-07-03T15:04:16.374865 #4152]  INFO -- default-centos-7: Preparing dna.json
-I, [2018-07-03T15:04:16.375286 #4152]  INFO -- default-centos-7: Resolving cookbook dependencies with Berkshelf 7.0.2...
-I, [2018-07-03T15:04:16.572387 #4152]  INFO -- default-centos-7: Removing non-cookbook files before transfer
-I, [2018-07-03T15:04:16.574353 #4152]  INFO -- default-centos-7: Preparing data_bags
-I, [2018-07-03T15:04:16.575165 #4152]  INFO -- default-centos-7: Preparing validation.pem
-I, [2018-07-03T15:04:16.576083 #4152]  INFO -- default-centos-7: Preparing client.rb
-I, [2018-07-03T15:04:16.617416 #4152]  INFO -- default-centos-7: -----> Installing Chef Omnibus (install only if missing)
-I, [2018-07-03T15:04:16.619702 #4152]  INFO -- default-centos-7: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
-I, [2018-07-03T15:04:16.619742 #4152]  INFO -- default-centos-7: Trying wget...
-I, [2018-07-03T15:04:16.809542 #4152]  INFO -- default-centos-7: Download complete.
-I, [2018-07-03T15:04:16.834230 #4152]  INFO -- default-centos-7: el 7 x86_64
-I, [2018-07-03T15:04:16.834295 #4152]  INFO -- default-centos-7: Getting information for chef stable  for el...
-I, [2018-07-03T15:04:16.834320 #4152]  INFO -- default-centos-7: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=el&pv=7&m=x86_64
-I, [2018-07-03T15:04:16.834342 #4152]  INFO -- default-centos-7:   to file /tmp/install.sh.2964/metadata.txt
-I, [2018-07-03T15:04:16.834928 #4152]  INFO -- default-centos-7: trying wget...
-I, [2018-07-03T15:04:17.000621 #4152]  INFO -- default-centos-7: sha1	bf0bd662c5b46d81418c943ac4bc6b84c095aa9c
-I, [2018-07-03T15:04:17.000693 #4152]  INFO -- default-centos-7: sha256	abdb676a8d55fc9807b4eabe5313c54d3946977d7ae3eecd7303cd388b04042a
-I, [2018-07-03T15:04:17.000727 #4152]  INFO -- default-centos-7: url	https://packages.chef.io/files/stable/chef/14.2.0/el/7/chef-14.2.0-1.el7.x86_64.rpm
-I, [2018-07-03T15:04:17.000753 #4152]  INFO -- default-centos-7: version	14.2.0
-I, [2018-07-03T15:04:17.002608 #4152]  INFO -- default-centos-7: downloaded metadata file looks valid...
-I, [2018-07-03T15:04:17.012774 #4152]  INFO -- default-centos-7: /tmp/omnibus/cache/chef-14.2.0-1.el7.x86_64.rpm exists
-I, [2018-07-03T15:04:17.012850 #4152]  INFO -- default-centos-7: Comparing checksum with sha256sum...
-I, [2018-07-03T15:04:17.335591 #4152]  INFO -- default-centos-7: 
-I, [2018-07-03T15:04:17.335656 #4152]  INFO -- default-centos-7: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2018-07-03T15:04:17.335685 #4152]  INFO -- default-centos-7: 
-I, [2018-07-03T15:04:17.335730 #4152]  INFO -- default-centos-7: You are installing an omnibus package without a version pin.  If you are installing
-I, [2018-07-03T15:04:17.335770 #4152]  INFO -- default-centos-7: on production servers via an automated process this is DANGEROUS and you will
-I, [2018-07-03T15:04:17.335797 #4152]  INFO -- default-centos-7: be upgraded without warning on new releases, even to new major releases.
-I, [2018-07-03T15:04:17.335818 #4152]  INFO -- default-centos-7: Letting the version float is only appropriate in desktop, test, development or
-I, [2018-07-03T15:04:17.335849 #4152]  INFO -- default-centos-7: CI/CD environments.
-I, [2018-07-03T15:04:17.335880 #4152]  INFO -- default-centos-7: 
-I, [2018-07-03T15:04:17.335900 #4152]  INFO -- default-centos-7: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2018-07-03T15:04:17.335922 #4152]  INFO -- default-centos-7: 
-I, [2018-07-03T15:04:17.335940 #4152]  INFO -- default-centos-7: Installing chef 
-I, [2018-07-03T15:04:17.335958 #4152]  INFO -- default-centos-7: installing with rpm...
-I, [2018-07-03T15:04:17.408305 #4152]  INFO -- default-centos-7: warning: /tmp/omnibus/cache/chef-14.2.0-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
-I, [2018-07-03T15:04:17.674874 #4152]  INFO -- default-centos-7: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
-I, [2018-07-03T15:04:17.694052 #4152]  INFO -- default-centos-7: Updating / installing...
-I, [2018-07-03T15:04:23.475672 #4152]  INFO -- default-centos-7:    1:chef-14.2.0-1.el7                                                  (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 51%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
-I, [2018-07-03T15:04:23.776850 #4152]  INFO -- default-centos-7: Thank you for installing Chef!
-I, [2018-07-03T15:04:23.854397 #4152]  INFO -- default-centos-7: Transferring files to <default-centos-7>
-I, [2018-07-03T15:04:25.045744 #4152]  INFO -- default-centos-7: Starting Chef Client, version 14.2.0
-I, [2018-07-03T15:04:26.238556 #4152]  INFO -- default-centos-7: Creating a new client identity for default-centos-7 using the validator key.
-I, [2018-07-03T15:04:26.376250 #4152]  INFO -- default-centos-7: resolving cookbooks for run list: ["postgres-cookbook::default"]
-I, [2018-07-03T15:04:26.376320 #4152]  INFO -- default-centos-7: 
-I, [2018-07-03T15:04:26.376345 #4152]  INFO -- default-centos-7: ================================================================================
-I, [2018-07-03T15:04:26.376375 #4152]  INFO -- default-centos-7: Error Resolving Cookbooks for Run List:
-I, [2018-07-03T15:04:26.376396 #4152]  INFO -- default-centos-7: ================================================================================
-I, [2018-07-03T15:04:26.376421 #4152]  INFO -- default-centos-7: 
-I, [2018-07-03T15:04:26.376441 #4152]  INFO -- default-centos-7: Missing Cookbooks:
-I, [2018-07-03T15:04:26.376463 #4152]  INFO -- default-centos-7: ------------------
-I, [2018-07-03T15:04:26.376482 #4152]  INFO -- default-centos-7: No such cookbook: postgres-cookbook
-I, [2018-07-03T15:04:26.376501 #4152]  INFO -- default-centos-7: 
-I, [2018-07-03T15:04:26.376519 #4152]  INFO -- default-centos-7: Expanded Run List:
-I, [2018-07-03T15:04:26.376540 #4152]  INFO -- default-centos-7: ------------------
-I, [2018-07-03T15:04:26.376559 #4152]  INFO -- default-centos-7: * postgres-cookbook::default
-I, [2018-07-03T15:04:26.376578 #4152]  INFO -- default-centos-7: 
-I, [2018-07-03T15:04:26.376598 #4152]  INFO -- default-centos-7: System Info:
-I, [2018-07-03T15:04:26.376617 #4152]  INFO -- default-centos-7: ------------
-I, [2018-07-03T15:04:26.376635 #4152]  INFO -- default-centos-7: chef_version=14.2.0
-I, [2018-07-03T15:04:26.376654 #4152]  INFO -- default-centos-7: platform=centos
-I, [2018-07-03T15:04:26.376675 #4152]  INFO -- default-centos-7: platform_version=7.4.1708
-I, [2018-07-03T15:04:26.376694 #4152]  INFO -- default-centos-7: ruby=ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
-I, [2018-07-03T15:04:26.376714 #4152]  INFO -- default-centos-7: program_name=/opt/chef/bin/chef-client
-I, [2018-07-03T15:04:26.376735 #4152]  INFO -- default-centos-7: executable=/opt/chef/bin/chef-client
-I, [2018-07-03T15:04:26.376754 #4152]  INFO -- default-centos-7: 
-I, [2018-07-03T15:04:26.376772 #4152]  INFO -- default-centos-7: 
-I, [2018-07-03T15:04:26.376789 #4152]  INFO -- default-centos-7: Running handlers:
-I, [2018-07-03T15:04:26.376830 #4152]  INFO -- default-centos-7: [2018-07-03T05:04:26+00:00] ERROR: Running exception handlers
-I, [2018-07-03T15:04:26.376851 #4152]  INFO -- default-centos-7: Running handlers complete
-I, [2018-07-03T15:04:26.376869 #4152]  INFO -- default-centos-7: [2018-07-03T05:04:26+00:00] ERROR: Exception handlers complete
-I, [2018-07-03T15:04:26.376887 #4152]  INFO -- default-centos-7: Chef Client failed. 0 resources updated in 01 seconds
-I, [2018-07-03T15:04:26.376905 #4152]  INFO -- default-centos-7: [2018-07-03T05:04:26+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
-I, [2018-07-03T15:04:26.376935 #4152]  INFO -- default-centos-7: [2018-07-03T05:04:26+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
-I, [2018-07-03T15:04:26.376958 #4152]  INFO -- default-centos-7: [2018-07-03T05:04:26+00:00] FATAL: Net::HTTPServerException: 412 "Precondition Failed"
-E, [2018-07-03T15:04:26.383182 #4152] ERROR -- default-centos-7: Converge failed on instance <default-centos-7>.
-E, [2018-07-03T15:04:26.383369 #4152] ERROR -- default-centos-7: ------Exception-------
-E, [2018-07-03T15:04:26.383413 #4152] ERROR -- default-centos-7: Class: Kitchen::ActionFailed
-E, [2018-07-03T15:04:26.383451 #4152] ERROR -- default-centos-7: Message: SSH exited (1) for command: [sh -c '
-TEST_KITCHEN="1"; export TEST_KITCHEN
-sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
-']
-E, [2018-07-03T15:04:26.383476 #4152] ERROR -- default-centos-7: ----------------------
-E, [2018-07-03T15:04:26.383494 #4152] ERROR -- default-centos-7: ------Backtrace-------
-E, [2018-07-03T15:04:26.383510 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/provisioner/base.rb:91:in `rescue in call'
-E, [2018-07-03T15:04:26.383526 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/provisioner/base.rb:67:in `call'
-E, [2018-07-03T15:04:26.383542 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:393:in `block in converge_action'
-E, [2018-07-03T15:04:26.383562 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:536:in `synchronize_or_call'
-E, [2018-07-03T15:04:26.383578 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:498:in `block in action'
-E, [2018-07-03T15:04:26.383603 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
-E, [2018-07-03T15:04:26.383618 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:497:in `action'
-E, [2018-07-03T15:04:26.383634 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:389:in `converge_action'
-E, [2018-07-03T15:04:26.383649 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:368:in `block in transition_to'
-E, [2018-07-03T15:04:26.383665 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:367:in `each'
-E, [2018-07-03T15:04:26.383681 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:367:in `transition_to'
-E, [2018-07-03T15:04:26.383699 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:135:in `converge'
-E, [2018-07-03T15:04:26.383715 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:197:in `public_send'
-E, [2018-07-03T15:04:26.383731 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
-E, [2018-07-03T15:04:26.383763 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
-E, [2018-07-03T15:04:26.383780 #4152] ERROR -- default-centos-7: ----End Backtrace-----
-E, [2018-07-03T15:04:26.383795 #4152] ERROR -- default-centos-7: ---Nested Exception---
-E, [2018-07-03T15:04:26.383809 #4152] ERROR -- default-centos-7: Class: Kitchen::Transport::SshFailed
-E, [2018-07-03T15:04:26.383824 #4152] ERROR -- default-centos-7: Message: SSH exited (1) for command: [sh -c '
-TEST_KITCHEN="1"; export TEST_KITCHEN
-sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
-']
-E, [2018-07-03T15:04:26.383839 #4152] ERROR -- default-centos-7: ----------------------
-E, [2018-07-03T15:04:26.383854 #4152] ERROR -- default-centos-7: ------Backtrace-------
-E, [2018-07-03T15:04:26.383868 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/provisioner/base.rb:91:in `rescue in call'
-E, [2018-07-03T15:04:26.383894 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/provisioner/base.rb:67:in `call'
-E, [2018-07-03T15:04:26.383933 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:393:in `block in converge_action'
-E, [2018-07-03T15:04:26.383951 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:536:in `synchronize_or_call'
-E, [2018-07-03T15:04:26.384018 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:498:in `block in action'
-E, [2018-07-03T15:04:26.384063 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
-E, [2018-07-03T15:04:26.384102 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:497:in `action'
-E, [2018-07-03T15:04:26.384134 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:389:in `converge_action'
-E, [2018-07-03T15:04:26.384160 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:368:in `block in transition_to'
-E, [2018-07-03T15:04:26.384189 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:367:in `each'
-E, [2018-07-03T15:04:26.384225 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:367:in `transition_to'
-E, [2018-07-03T15:04:26.384254 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:135:in `converge'
-E, [2018-07-03T15:04:26.384270 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:197:in `public_send'
-E, [2018-07-03T15:04:26.384285 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
-E, [2018-07-03T15:04:26.384303 #4152] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
-E, [2018-07-03T15:04:26.384318 #4152] ERROR -- default-centos-7: ----End Backtrace-----
+I, [2018-07-03T15:09:07.093809 #4549]  INFO -- default-centos-7: -----> Creating <default-centos-7>...
+I, [2018-07-03T15:09:07.863399 #4549]  INFO -- default-centos-7: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2018-07-03T15:09:08.171148 #4549]  INFO -- default-centos-7: ==> default: Importing base box 'bento/centos-7'...
+I, [2018-07-03T15:09:13.853665 #4549]  INFO -- default-centos-7: [KProgress: 30%[KProgress: 50%[KProgress: 60%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2018-07-03T15:09:13.971481 #4549]  INFO -- default-centos-7: ==> default: Checking if box 'bento/centos-7' is up to date...
+I, [2018-07-03T15:09:15.932551 #4549]  INFO -- default-centos-7: ==> default: Setting the name of the VM: default-centos-7_default_1530594555888_27338
+I, [2018-07-03T15:09:16.503641 #4549]  INFO -- default-centos-7: ==> default: Clearing any previously set network interfaces...
+I, [2018-07-03T15:09:16.558152 #4549]  INFO -- default-centos-7: ==> default: Preparing network interfaces based on configuration...
+I, [2018-07-03T15:09:16.558526 #4549]  INFO -- default-centos-7:     default: Adapter 1: nat
+I, [2018-07-03T15:09:16.610543 #4549]  INFO -- default-centos-7: ==> default: Forwarding ports...
+I, [2018-07-03T15:09:16.692270 #4549]  INFO -- default-centos-7:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2018-07-03T15:09:16.841035 #4549]  INFO -- default-centos-7: ==> default: Booting VM...
+I, [2018-07-03T15:09:17.103758 #4549]  INFO -- default-centos-7: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2018-07-03T15:09:17.385596 #4549]  INFO -- default-centos-7:     default: SSH address: 127.0.0.1:2222
+I, [2018-07-03T15:09:17.385822 #4549]  INFO -- default-centos-7:     default: SSH username: vagrant
+I, [2018-07-03T15:09:17.386014 #4549]  INFO -- default-centos-7:     default: SSH auth method: private key
+I, [2018-07-03T15:09:33.279779 #4549]  INFO -- default-centos-7:     default: 
+I, [2018-07-03T15:09:33.279896 #4549]  INFO -- default-centos-7:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2018-07-03T15:09:33.279963 #4549]  INFO -- default-centos-7:     default: this with a newly generated keypair for better security.
+I, [2018-07-03T15:09:34.276350 #4549]  INFO -- default-centos-7:     default: 
+I, [2018-07-03T15:09:34.276552 #4549]  INFO -- default-centos-7:     default: Inserting generated public key within guest...
+I, [2018-07-03T15:09:34.383166 #4549]  INFO -- default-centos-7:     default: Removing insecure key from the guest if it's present...
+I, [2018-07-03T15:09:34.492448 #4549]  INFO -- default-centos-7:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2018-07-03T15:09:35.170307 #4549]  INFO -- default-centos-7: ==> default: Machine booted and ready!
+I, [2018-07-03T15:09:35.170735 #4549]  INFO -- default-centos-7: ==> default: Checking for guest additions in VM...
+I, [2018-07-03T15:09:35.217327 #4549]  INFO -- default-centos-7: ==> default: Setting hostname...
+I, [2018-07-03T15:09:36.225948 #4549]  INFO -- default-centos-7: ==> default: Mounting shared folders...
+I, [2018-07-03T15:09:36.226372 #4549]  INFO -- default-centos-7:     default: /tmp/omnibus/cache => /Users/harjinderbrar/.kitchen/cache
+I, [2018-07-03T15:09:36.714393 #4549]  INFO -- default-centos-7: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2018-07-03T15:09:38.243396 #4549]  INFO -- default-centos-7: [SSH] Established
+I, [2018-07-03T15:09:38.243761 #4549]  INFO -- default-centos-7: Vagrant instance <default-centos-7> created.
+I, [2018-07-03T15:09:38.244878 #4549]  INFO -- default-centos-7: Finished creating <default-centos-7> (0m31.15s).
+I, [2018-07-03T15:09:38.245153 #4549]  INFO -- default-centos-7: -----> Converging <default-centos-7>...
+I, [2018-07-03T15:09:38.245900 #4549]  INFO -- default-centos-7: Preparing files for transfer
+I, [2018-07-03T15:09:38.246038 #4549]  INFO -- default-centos-7: Preparing dna.json
+I, [2018-07-03T15:09:38.246443 #4549]  INFO -- default-centos-7: Resolving cookbook dependencies with Berkshelf 7.0.2...
+I, [2018-07-03T15:09:41.871727 #4549]  INFO -- default-centos-7: Removing non-cookbook files before transfer
+I, [2018-07-03T15:09:41.873818 #4549]  INFO -- default-centos-7: Preparing data_bags
+I, [2018-07-03T15:09:41.874546 #4549]  INFO -- default-centos-7: Preparing validation.pem
+I, [2018-07-03T15:09:41.875567 #4549]  INFO -- default-centos-7: Preparing client.rb
+I, [2018-07-03T15:09:41.917567 #4549]  INFO -- default-centos-7: -----> Installing Chef Omnibus (install only if missing)
+I, [2018-07-03T15:09:41.920178 #4549]  INFO -- default-centos-7: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2018-07-03T15:09:41.920224 #4549]  INFO -- default-centos-7: Trying wget...
+I, [2018-07-03T15:09:43.058735 #4549]  INFO -- default-centos-7: Download complete.
+I, [2018-07-03T15:09:43.080753 #4549]  INFO -- default-centos-7: el 7 x86_64
+I, [2018-07-03T15:09:43.080811 #4549]  INFO -- default-centos-7: Getting information for chef stable  for el...
+I, [2018-07-03T15:09:43.080841 #4549]  INFO -- default-centos-7: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=el&pv=7&m=x86_64
+I, [2018-07-03T15:09:43.080864 #4549]  INFO -- default-centos-7:   to file /tmp/install.sh.2957/metadata.txt
+I, [2018-07-03T15:09:43.081452 #4549]  INFO -- default-centos-7: trying wget...
+I, [2018-07-03T15:09:43.473017 #4549]  INFO -- default-centos-7: sha1	bf0bd662c5b46d81418c943ac4bc6b84c095aa9c
+I, [2018-07-03T15:09:43.473098 #4549]  INFO -- default-centos-7: sha256	abdb676a8d55fc9807b4eabe5313c54d3946977d7ae3eecd7303cd388b04042a
+I, [2018-07-03T15:09:43.473130 #4549]  INFO -- default-centos-7: url	https://packages.chef.io/files/stable/chef/14.2.0/el/7/chef-14.2.0-1.el7.x86_64.rpm
+I, [2018-07-03T15:09:43.473156 #4549]  INFO -- default-centos-7: version	14.2.0
+I, [2018-07-03T15:09:43.475233 #4549]  INFO -- default-centos-7: downloaded metadata file looks valid...
+I, [2018-07-03T15:09:43.487989 #4549]  INFO -- default-centos-7: /tmp/omnibus/cache/chef-14.2.0-1.el7.x86_64.rpm exists
+I, [2018-07-03T15:09:43.488057 #4549]  INFO -- default-centos-7: Comparing checksum with sha256sum...
+I, [2018-07-03T15:09:43.802948 #4549]  INFO -- default-centos-7: 
+I, [2018-07-03T15:09:43.803011 #4549]  INFO -- default-centos-7: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2018-07-03T15:09:43.803036 #4549]  INFO -- default-centos-7: 
+I, [2018-07-03T15:09:43.803057 #4549]  INFO -- default-centos-7: You are installing an omnibus package without a version pin.  If you are installing
+I, [2018-07-03T15:09:43.803077 #4549]  INFO -- default-centos-7: on production servers via an automated process this is DANGEROUS and you will
+I, [2018-07-03T15:09:43.803096 #4549]  INFO -- default-centos-7: be upgraded without warning on new releases, even to new major releases.
+I, [2018-07-03T15:09:43.803116 #4549]  INFO -- default-centos-7: Letting the version float is only appropriate in desktop, test, development or
+I, [2018-07-03T15:09:43.803134 #4549]  INFO -- default-centos-7: CI/CD environments.
+I, [2018-07-03T15:09:43.803152 #4549]  INFO -- default-centos-7: 
+I, [2018-07-03T15:09:43.803171 #4549]  INFO -- default-centos-7: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2018-07-03T15:09:43.803188 #4549]  INFO -- default-centos-7: 
+I, [2018-07-03T15:09:43.803224 #4549]  INFO -- default-centos-7: Installing chef 
+I, [2018-07-03T15:09:43.803242 #4549]  INFO -- default-centos-7: installing with rpm...
+I, [2018-07-03T15:09:43.869675 #4549]  INFO -- default-centos-7: warning: /tmp/omnibus/cache/chef-14.2.0-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2018-07-03T15:09:44.126534 #4549]  INFO -- default-centos-7: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2018-07-03T15:09:44.146565 #4549]  INFO -- default-centos-7: Updating / installing...
+I, [2018-07-03T15:09:50.014206 #4549]  INFO -- default-centos-7:    1:chef-14.2.0-1.el7                                                  (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 51%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2018-07-03T15:09:50.308904 #4549]  INFO -- default-centos-7: Thank you for installing Chef!
+I, [2018-07-03T15:09:50.379263 #4549]  INFO -- default-centos-7: Transferring files to <default-centos-7>
+I, [2018-07-03T15:09:51.593226 #4549]  INFO -- default-centos-7: Starting Chef Client, version 14.2.0
+I, [2018-07-03T15:09:52.801272 #4549]  INFO -- default-centos-7: Creating a new client identity for default-centos-7 using the validator key.
+I, [2018-07-03T15:09:52.889695 #4549]  INFO -- default-centos-7: resolving cookbooks for run list: ["postgres::default"]
+I, [2018-07-03T15:09:52.893547 #4549]  INFO -- default-centos-7: Synchronizing Cookbooks:
+I, [2018-07-03T15:09:52.901475 #4549]  INFO -- default-centos-7:   - postgres (0.1.0)
+I, [2018-07-03T15:09:52.907958 #4549]  INFO -- default-centos-7: Installing Cookbook Gems:
+I, [2018-07-03T15:09:52.908028 #4549]  INFO -- default-centos-7: Compiling Cookbooks...
+I, [2018-07-03T15:09:52.908051 #4549]  INFO -- default-centos-7: Converging 5 resources
+I, [2018-07-03T15:09:52.908072 #4549]  INFO -- default-centos-7: Recipe: postgres::default
+I, [2018-07-03T15:10:05.863925 #4549]  INFO -- default-centos-7:   * yum_package[postgresql-server, postgresql-contrib] action install
+I, [2018-07-03T15:10:05.864004 #4549]  INFO -- default-centos-7:     - install version 0:9.2.23-3.el7_4.x86_64 of package postgresql-server
+I, [2018-07-03T15:10:05.864032 #4549]  INFO -- default-centos-7:     - install version 0:9.2.23-3.el7_4.x86_64 of package postgresql-contrib
+I, [2018-07-03T15:10:07.428907 #4549]  INFO -- default-centos-7:   * execute[initialize-the-cluster] action run
+I, [2018-07-03T15:10:07.428990 #4549]  INFO -- default-centos-7:     - execute postgresql-setup initdb
+I, [2018-07-03T15:10:07.429021 #4549]  INFO -- default-centos-7:   * template[/var/lib/pgsql/data/pg_hba.conf] action create
+I, [2018-07-03T15:10:07.429060 #4549]  INFO -- default-centos-7:     - update content in file /var/lib/pgsql/data/pg_hba.conf from 8daecd to 325805
+I, [2018-07-03T15:10:07.429085 #4549]  INFO -- default-centos-7:     --- /var/lib/pgsql/data/pg_hba.conf	2018-07-03 05:10:06.415037994 +0000
+I, [2018-07-03T15:10:07.429113 #4549]  INFO -- default-centos-7:     +++ /var/lib/pgsql/data/.chef-pg_hba20180703-3084-1460bu6.conf	2018-07-03 05:10:07.421992738 +0000
+I, [2018-07-03T15:10:07.429142 #4549]  INFO -- default-centos-7:     @@ -77,11 +77,11 @@
+I, [2018-07-03T15:10:07.429166 #4549]  INFO -- default-centos-7:      # TYPE  DATABASE        USER            ADDRESS                 METHOD
+I, [2018-07-03T15:10:07.429188 #4549]  INFO -- default-centos-7:      
+I, [2018-07-03T15:10:07.429209 #4549]  INFO -- default-centos-7:      # "local" is for Unix domain socket connections only
+I, [2018-07-03T15:10:07.429251 #4549]  INFO -- default-centos-7:     -local   all             all                                     peer
+I, [2018-07-03T15:10:07.429274 #4549]  INFO -- default-centos-7:     +local   all             all                                     ident
+I, [2018-07-03T15:10:07.429297 #4549]  INFO -- default-centos-7:      # IPv4 local connections:
+I, [2018-07-03T15:10:07.429319 #4549]  INFO -- default-centos-7:     -host    all             all             127.0.0.1/32            ident
+I, [2018-07-03T15:10:07.429339 #4549]  INFO -- default-centos-7:     +host    all             all             127.0.0.1/32            md5
+I, [2018-07-03T15:10:07.429359 #4549]  INFO -- default-centos-7:      # IPv6 local connections:
+I, [2018-07-03T15:10:07.429379 #4549]  INFO -- default-centos-7:     -host    all             all             ::1/128                 ident
+I, [2018-07-03T15:10:07.429400 #4549]  INFO -- default-centos-7:     +host    all             all             ::1/128                 md5
+I, [2018-07-03T15:10:07.429449 #4549]  INFO -- default-centos-7:      # Allow replication connections from localhost, by a user with the
+I, [2018-07-03T15:10:07.429469 #4549]  INFO -- default-centos-7:      # replication privilege.
+I, [2018-07-03T15:10:07.467824 #4549]  INFO -- default-centos-7:      #local   replication     postgres                                peer
+I, [2018-07-03T15:10:07.467900 #4549]  INFO -- default-centos-7:     - restore selinux security context
+I, [2018-07-03T15:10:07.593978 #4549]  INFO -- default-centos-7:   * service[postgresql] action enable
+I, [2018-07-03T15:10:07.594065 #4549]  INFO -- default-centos-7:     - enable service service[postgresql]
+I, [2018-07-03T15:10:08.736589 #4549]  INFO -- default-centos-7:   * service[postgresql] action start
+I, [2018-07-03T15:10:08.736655 #4549]  INFO -- default-centos-7:     - start service service[postgresql]
+I, [2018-07-03T15:10:08.736681 #4549]  INFO -- default-centos-7:   * template[/var/lib/pgsql/data/postgresql.conf] action create
+I, [2018-07-03T15:10:08.736705 #4549]  INFO -- default-centos-7:     - update content in file /var/lib/pgsql/data/postgresql.conf from f87fe3 to d3d842
+I, [2018-07-03T15:10:08.736727 #4549]  INFO -- default-centos-7:     --- /var/lib/pgsql/data/postgresql.conf	2018-07-03 05:10:06.415037994 +0000
+I, [2018-07-03T15:10:08.736748 #4549]  INFO -- default-centos-7:     +++ /var/lib/pgsql/data/.chef-postgresql20180703-3084-1vuqnn1.conf	2018-07-03 05:10:08.726934088 +0000
+I, [2018-07-03T15:10:08.736768 #4549]  INFO -- default-centos-7:     @@ -60,7 +60,7 @@
+I, [2018-07-03T15:10:08.736788 #4549]  INFO -- default-centos-7:      					# comma-separated list of addresses;
+I, [2018-07-03T15:10:08.736807 #4549]  INFO -- default-centos-7:      					# defaults to 'localhost'; use '*' for all
+I, [2018-07-03T15:10:08.736832 #4549]  INFO -- default-centos-7:      					# (change requires restart)
+I, [2018-07-03T15:10:08.736853 #4549]  INFO -- default-centos-7:     -#port = 5432				# (change requires restart)
+I, [2018-07-03T15:10:08.736873 #4549]  INFO -- default-centos-7:     +port = 5432				# (change requires restart)
+I, [2018-07-03T15:10:08.736892 #4549]  INFO -- default-centos-7:      # Note: In RHEL/Fedora installations, you can't set the port number here;
+I, [2018-07-03T15:10:08.736912 #4549]  INFO -- default-centos-7:      # adjust it in the service file instead.
+I, [2018-07-03T15:10:08.736932 #4549]  INFO -- default-centos-7:      max_connections = 100			# (change requires restart)
+I, [2018-07-03T15:10:08.736952 #4549]  INFO -- default-centos-7:     @@ -162,7 +162,7 @@
+I, [2018-07-03T15:10:08.736971 #4549]  INFO -- default-centos-7:      
+I, [2018-07-03T15:10:08.736990 #4549]  INFO -- default-centos-7:      # - Settings -
+I, [2018-07-03T15:10:08.737008 #4549]  INFO -- default-centos-7:      
+I, [2018-07-03T15:10:08.737028 #4549]  INFO -- default-centos-7:     -#wal_level = minimal			# minimal, archive, or hot_standby
+I, [2018-07-03T15:10:08.737049 #4549]  INFO -- default-centos-7:     +wal_level = minimal			# minimal, archive, or hot_standby
+I, [2018-07-03T15:10:08.737089 #4549]  INFO -- default-centos-7:      					# (change requires restart)
+I, [2018-07-03T15:10:08.737110 #4549]  INFO -- default-centos-7:      #fsync = on				# turns forced synchronization on or off
+I, [2018-07-03T15:10:08.756471 #4549]  INFO -- default-centos-7:      #synchronous_commit = on		# synchronization level;
+I, [2018-07-03T15:10:08.756539 #4549]  INFO -- default-centos-7:     - restore selinux security context
+I, [2018-07-03T15:10:10.875033 #4549]  INFO -- default-centos-7:   * service[postgresql] action restart
+I, [2018-07-03T15:10:10.875119 #4549]  INFO -- default-centos-7:     - restart service service[postgresql]
+I, [2018-07-03T15:10:10.908784 #4549]  INFO -- default-centos-7: 
+I, [2018-07-03T15:10:10.908839 #4549]  INFO -- default-centos-7: Running handlers:
+I, [2018-07-03T15:10:10.908862 #4549]  INFO -- default-centos-7: Running handlers complete
+I, [2018-07-03T15:10:10.908882 #4549]  INFO -- default-centos-7: Chef Client finished, 7/7 resources updated in 19 seconds
+I, [2018-07-03T15:10:10.928588 #4549]  INFO -- default-centos-7: Downloading files from <default-centos-7>
+I, [2018-07-03T15:10:10.931358 #4549]  INFO -- default-centos-7: Finished converging <default-centos-7> (0m32.69s).
