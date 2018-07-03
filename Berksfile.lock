@@ -1,0 +1,7 @@
+DEPENDENCIES
+  postgres
+    path: .
+    metadata: true
+
+GRAPH
+  postgres (0.1.0)

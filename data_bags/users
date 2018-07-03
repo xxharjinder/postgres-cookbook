@@ -1,0 +1,5 @@
+{
+    "id": "postgres",
+    "password": "postgres",
+    "user": "postgres_user"
+}
