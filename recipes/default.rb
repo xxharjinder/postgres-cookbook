@@ -15,13 +15,21 @@ execute 'initialize-the-cluster' do
     command 'postgresql-setup initdb'
 end
 
+#create directory
+directory '/home/postgres' do
+  action :create
+  owner 'postgres'
+  group 'postgres'
+end
+
 #change password for postgres user
 #Monday123
+#openssl passwd -1 "Monday123"
 
 user 'postgres' do
   action :modify
-  home '/home/postgres'
-  password '$1$0TD5SSvm$CmA78zrARJsx15I9anLEC/'
+  home '/home/postgres/'
+  password '$1$Qd5XX0Tt$paNSzpHatTBn5oGcIYXGH/'
 end
 
 #update pg_hba.conf from template, restart pgsql when template is loaded
