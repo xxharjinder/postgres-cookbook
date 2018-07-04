@@ -18,6 +18,10 @@ end
 #change password for postgres user
 #sudo -u postgres psql postgres
 
+user 'postgres' do
+  action :modify
+  home '/home/postgres'
+  password 'Monday123'
 
 #update pg_hba.conf from template, restart pgsql when template is loaded
 template '/var/lib/pgsql/data/pg_hba.conf' do
