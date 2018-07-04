@@ -16,12 +16,13 @@ execute 'initialize-the-cluster' do
 end
 
 #change password for postgres user
-#sudo -u postgres psql postgres
+#Monday123
 
 user 'postgres' do
   action :modify
   home '/home/postgres'
-  password 'Monday123'
+  password '$1$0TD5SSvm$CmA78zrARJsx15I9anLEC/'
+end
 
 #update pg_hba.conf from template, restart pgsql when template is loaded
 template '/var/lib/pgsql/data/pg_hba.conf' do
